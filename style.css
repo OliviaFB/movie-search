@@ -1,0 +1,110 @@
+body {
+  font-family: sans-serif;
+  background-color: #000000;
+}
+
+/*specific CSS*/
+
+.banner-title {
+  font-size: 80px;
+  margin: 10px;
+}
+
+#banner-top {
+  background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url("https://images.pexels.com/photos/109669/pexels-photo-109669.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  height: 80vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#banner-container {
+  position: relative;
+  top: 360px;
+  padding-left: 40px;
+  color: #FFFF;
+}
+
+.search {
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 1.5rem 2rem;
+}
+
+.search::placeholder {
+  color: #ffffff52;
+}
+
+.search::focus {
+  background-color: #22254b;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.movie {
+  background-color: #202222;
+  border-radius: 3px;
+  overflow: hidden;
+  position: relative;
+  margin: 1rem;
+  width: 300px;
+}
+.movie img {
+  width: 100%;
+}
+
+.movie-info {
+  color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem 1rem;
+  letter-spacing: 0.5px;
+}
+.movie-info span {
+  background-color: #440808;
+  border-radius: 3px;
+  font-weight: bold;
+  padding: 0.25rem 0.5rem;
+}
+
+.movie-info span.green {
+  color: green;
+}
+
+.movie-info span.orange {
+  color: orange;
+}
+
+movie-info span.red {
+  color: red;
+}
+
+.overview {
+  text-align: justify;
+  color: #eee;
+  background-color: #440808;
+  padding: 2rem;
+  position: absolute;
+  max-height: 100%;
+  overflow: auto;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transform: translateY(101%);
+  transition: transform 0.3s ease-in;
+}
+.overview h3 {
+  margin-top: 0;
+}
+
+.movie:hover .overview {
+  transform: translateY(0);
